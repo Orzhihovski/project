@@ -1,0 +1,118 @@
+.advantage {
+  background-color: var(--heder-bg-color);
+ 
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+  
+
+  
+
+}
+
+.advantage-list {
+
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+   
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+  }
+}
+
+
+
+.advantage-list__item {
+  text-align: center;
+
+  &:not(:last-child) {
+@media screen and (max-width: 767px) {
+  margin-bottom: 30px;
+  
+}
+  }
+
+
+
+@media screen and (min-width: 768px) {
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
+  
+}
+
+
+
+
+}
+
+
+
+.advantage-list__card {
+  // width: 270px;
+  width: 100%;
+  height: 120px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  @media screen and (min-width: 1200px) {
+  width: 270px;
+    
+  }
+}
+
+
+.advantage-list__title {
+  // display: flex;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--second-title-color);
+  margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.advantage-list__text {
+  display: flex;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.46;
+  /* or 171% */
+  text-align: left;
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    
+  }
+}
+
+
+
+
+
